@@ -17,10 +17,10 @@ export default function Welcome() {
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-[1fr_2fr] gap-12 md:gap-16 items-start">
           <motion.div {...anim(0)} className="flex flex-col gap-4">
-            <span className="text-[#D32323] text-[10px] tracking-[0.35em] uppercase">
+            <span className="text-[#00b7cc] text-[10px] tracking-[0.35em] uppercase">
               Welcome
             </span>
-            <div className="h-px w-16 bg-[#D32323]" />
+            <div className="h-px w-16 bg-[#00b7cc]" />
             <p className="text-xs tracking-[0.2em] uppercase text-foreground/40 mt-4">
               {COMPANY.serviceArea}
             </p>
@@ -32,7 +32,7 @@ export default function Welcome() {
               className="font-serif text-4xl sm:text-5xl leading-tight text-foreground"
             >
               Your luxury Houston event space for{' '}
-              <em className="italic text-[#D32323]">unforgettable celebrations.</em>
+              <em className="italic text-[#00b7cc]">unforgettable celebrations.</em>
             </motion.h2>
             <motion.p {...anim(0.2)} className="text-foreground/65 leading-relaxed text-base sm:text-lg">
               {ABOUT_CONTENT.intro} {ABOUT_CONTENT.body}
@@ -47,7 +47,7 @@ export default function Welcome() {
                 { number: `${COMPANY.reviewCount}+`, label: 'Reviews' },
               ].map((stat) => (
                 <div key={stat.label}>
-                  <p className="font-serif text-2xl text-[#D32323]">{stat.number}</p>
+                  <p className="font-serif text-2xl text-[#00b7cc]">{stat.number}</p>
                   <p className="text-xs text-foreground/50 tracking-wide mt-0.5">{stat.label}</p>
                 </div>
               ))}
@@ -55,7 +55,7 @@ export default function Welcome() {
             <motion.div {...anim(0.5)}>
               <Link
                 href="/about"
-                className="inline-flex items-center text-[#D32323] text-xs tracking-[0.2em] uppercase hover:underline underline-offset-4"
+                className="inline-flex items-center text-[#00b7cc] text-xs tracking-[0.2em] uppercase hover:underline underline-offset-4"
               >
                 Learn More About Our Venue
               </Link>

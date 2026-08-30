@@ -21,15 +21,15 @@ export const COMPANY = {
   reviewCount: 289,
 };
 
-export const ACCENT = '#D32323';
-export const ACCENT_HOVER = '#B01E1E';
+export const ACCENT = '#00b7cc';
+export const ACCENT_HOVER = '#0099aa';
 
 export const NAV_LINKS = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
+  { label: 'Events', href: '/events' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Reviews', href: '/reviews' },
-  { label: 'Tour', href: '/tour' },
   { label: 'FAQ', href: '/faq' },
   { label: 'Contact', href: '/contact' },
 ];

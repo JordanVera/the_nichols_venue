@@ -79,7 +79,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-[#D32323] text-xs tracking-[0.4em] uppercase mb-6"
+          className="text-[#00b7cc] text-xs tracking-[0.4em] uppercase mb-6"
         >
           Montrose · River Oaks · Up to {COMPANY.maxGuests} Guests
         </motion.p>
@@ -90,7 +90,7 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.35 }}
           className="font-serif text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.05] tracking-tight max-w-4xl"
         >
-          Luxury Event Space for <em className="italic text-[#D32323]">Every Celebration</em>
+          Luxury Event Space for <em className="italic text-[#00b7cc]">Every Celebration</em>
         </motion.h1>
 
         <motion.p
@@ -110,13 +110,13 @@ export default function Hero() {
         >
           <Link
             href="/tour"
-            className="px-8 py-3.5 bg-[#D32323] text-white text-xs tracking-[0.2em] uppercase font-medium hover:bg-[#B01E1E] transition-colors duration-200"
+            className="px-8 py-3.5 bg-[#00b7cc] text-white text-xs tracking-[0.2em] uppercase font-medium hover:bg-[#0099aa] transition-colors duration-200"
           >
             Book a Tour
           </Link>
           <Link
             href="/contact"
-            className="px-8 py-3.5 border border-white/50 text-white text-xs tracking-[0.2em] uppercase hover:border-[#D32323] hover:text-[#D32323] transition-all duration-200"
+            className="px-8 py-3.5 border border-white/50 text-white text-xs tracking-[0.2em] uppercase hover:border-[#00b7cc] hover:text-[#00b7cc] transition-all duration-200"
           >
             Contact Us
           </Link>

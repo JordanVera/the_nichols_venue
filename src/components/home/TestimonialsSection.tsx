@@ -9,7 +9,7 @@ export default function TestimonialsSection() {
     <section className="py-24 px-6 lg:px-8 bg-[#FAF7F7]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-[#D32323] text-[10px] tracking-[0.35em] uppercase mb-4">
+          <p className="text-[#00b7cc] text-[10px] tracking-[0.35em] uppercase mb-4">
             Guest Book
           </p>
           <h2 className="font-serif text-foreground text-4xl sm:text-5xl">
@@ -29,7 +29,7 @@ export default function TestimonialsSection() {
             >
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: review.rating }).map((_, n) => (
-                  <Star key={n} size={14} className="fill-[#D32323] text-[#D32323]" />
+                  <Star key={n} size={14} className="fill-[#00b7cc] text-[#00b7cc]" />
                 ))}
               </div>
               <p className="font-serif text-lg leading-snug text-foreground">

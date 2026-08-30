@@ -27,7 +27,7 @@ export default function TourPage() {
         />
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 pt-20 text-center">
-          <p className="mb-4 text-[10px] tracking-[0.4em] text-[#D32323] uppercase">
+          <p className="mb-4 text-[10px] tracking-[0.4em] text-[#00b7cc] uppercase">
             Explore the Venue
           </p>
           <h1 className="font-serif text-5xl text-white sm:text-6xl">
@@ -51,7 +51,7 @@ export default function TourPage() {
               sooner, call us at{' '}
               <a
                 href={`tel:${COMPANY.phoneHref}`}
-                className="text-[#D32323] transition-colors hover:underline"
+                className="text-[#00b7cc] transition-colors hover:underline"
               >
                 {COMPANY.phone}
               </a>
@@ -70,7 +70,7 @@ export default function TourPage() {
               {COMPANY.phone ? (
                 <a
                   href={`tel:${COMPANY.phoneHref}`}
-                  className="inline-flex items-center gap-2 border border-border px-5 py-2.5 text-xs tracking-[0.15em] text-foreground uppercase transition-colors hover:border-[#D32323]/50 hover:text-[#D32323]"
+                  className="inline-flex items-center gap-2 border border-border px-5 py-2.5 text-xs tracking-[0.15em] text-foreground uppercase transition-colors hover:border-[#00b7cc]/50 hover:text-[#00b7cc]"
                 >
                   <Phone className="h-3.5 w-3.5" />
                   {COMPANY.phone}
@@ -78,7 +78,7 @@ export default function TourPage() {
               ) : null}
               <Link
                 href="/contact"
-                className="inline-flex items-center bg-[#D32323] px-5 py-2.5 text-xs tracking-[0.15em] text-white uppercase transition-colors hover:bg-[#B01E1E]"
+                className="inline-flex items-center bg-[#00b7cc] px-5 py-2.5 text-xs tracking-[0.15em] text-white uppercase transition-colors hover:bg-[#0099aa]"
               >
                 Send an Inquiry
               </Link>

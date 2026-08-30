@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { getAllEventSlugs } from '@/lib/events';
 import { SITE_URL } from '@/lib/seo';
 
 const routes = [
@@ -10,6 +11,12 @@ const routes = [
   { path: '/tour', priority: 0.9, changeFrequency: 'monthly' as const },
   { path: '/faq', priority: 0.7, changeFrequency: 'monthly' as const },
   { path: '/contact', priority: 0.8, changeFrequency: 'monthly' as const },
+  ...getAllEventSlugs().map((slug) => ({
+    path: `/events/${slug}`,
+    priority: 0.85,
+    changeFrequency: 'monthly' as const,
+  })),
+  { path: '/events', priority: 0.9, changeFrequency: 'monthly' as const },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

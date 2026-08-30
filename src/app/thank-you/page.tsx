@@ -13,17 +13,17 @@ export const metadata: Metadata = pageMetadata({
 export default function ThankYouPage() {
   return (
     <section className="min-h-[70vh] flex flex-col items-center justify-center px-6 py-32 text-center">
-      <p className="text-[#D32323] text-[10px] tracking-[0.4em] uppercase mb-6">Message Received</p>
+      <p className="text-[#00b7cc] text-[10px] tracking-[0.4em] uppercase mb-6">Message Received</p>
       <h1 className="font-serif text-foreground text-4xl sm:text-5xl mb-6">Thank You</h1>
       <p className="text-foreground/60 max-w-md leading-relaxed mb-10">
         We&apos;ve received your inquiry and will be in touch soon. We look forward
         to welcoming you to The Nichols Venue.
       </p>
       <div className="flex flex-col sm:flex-row gap-4">
-        <Link href="/" className="px-8 py-3.5 bg-[#D32323] text-black text-xs tracking-[0.2em] uppercase hover:bg-[#B01E1E] transition-colors">
+        <Link href="/" className="px-8 py-3.5 bg-[#00b7cc] text-black text-xs tracking-[0.2em] uppercase hover:bg-[#0099aa] transition-colors">
           Back to Home
         </Link>
-        <Link href="/pricing" className="px-8 py-3.5 border border-border text-foreground text-xs tracking-[0.2em] uppercase hover:border-[#D32323] hover:text-[#D32323] transition-colors">
+        <Link href="/pricing" className="px-8 py-3.5 border border-border text-foreground text-xs tracking-[0.2em] uppercase hover:border-[#00b7cc] hover:text-[#00b7cc] transition-colors">
           View Pricing
         </Link>
       </div>

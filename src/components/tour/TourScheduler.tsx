@@ -158,7 +158,7 @@ export default function TourScheduler() {
     <div className="overflow-hidden border border-border bg-card shadow-sm">
       <div className="grid lg:grid-cols-[240px_1fr]">
         <aside className="border-b border-border bg-[#FAF7F7] p-6 lg:border-r lg:border-b-0">
-          <p className="mb-1 text-[10px] tracking-[0.3em] text-[#D32323] uppercase">
+          <p className="mb-1 text-[10px] tracking-[0.3em] text-[#00b7cc] uppercase">
             The Nichols
           </p>
           <h3 className="font-serif text-2xl text-foreground">Book a Tour</h3>
@@ -170,22 +170,22 @@ export default function TourScheduler() {
 
           <ul className="mt-8 space-y-4 text-sm text-foreground/70">
             <li className="flex items-start gap-3">
-              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-[#D32323]" />
+              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-[#00b7cc]" />
               <span>
                 {selectedTour ? selectedTour.duration : '30–45 min'} walkthrough
               </span>
             </li>
             <li className="flex items-start gap-3">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#D32323]" />
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#00b7cc]" />
               <span>In-person at the venue</span>
             </li>
             <li className="flex items-start gap-3">
-              <Users className="mt-0.5 h-4 w-4 shrink-0 text-[#D32323]" />
+              <Users className="mt-0.5 h-4 w-4 shrink-0 text-[#00b7cc]" />
               <span>Private appointment</span>
             </li>
             {selectedDate && selectedTime ? (
               <li className="flex items-start gap-3">
-                <CalendarDays className="mt-0.5 h-4 w-4 shrink-0 text-[#D32323]" />
+                <CalendarDays className="mt-0.5 h-4 w-4 shrink-0 text-[#00b7cc]" />
                 <span>
                   {formatLongDate(selectedDate)}
                   <br />
@@ -205,7 +205,7 @@ export default function TourScheduler() {
                 }
                 resetBooking();
               }}
-              className="mt-8 inline-flex items-center gap-1 text-xs tracking-wide text-foreground/50 uppercase transition-colors hover:text-[#D32323]"
+              className="mt-8 inline-flex items-center gap-1 text-xs tracking-wide text-foreground/50 uppercase transition-colors hover:text-[#00b7cc]"
             >
               <ChevronLeft className="h-3.5 w-3.5" />
               Back
@@ -228,9 +228,9 @@ export default function TourScheduler() {
                     key={tour.id}
                     type="button"
                     onClick={() => selectTour(tour.id)}
-                    className="group border border-border bg-background p-5 text-left transition-all hover:border-[#D32323]/50 hover:shadow-sm"
+                    className="group border border-border bg-background p-5 text-left transition-all hover:border-[#00b7cc]/50 hover:shadow-sm"
                   >
-                    <div className="mb-4 flex h-10 w-10 items-center justify-center border border-[#D32323]/25 text-[#D32323] transition-colors group-hover:bg-[#D32323] group-hover:text-white">
+                    <div className="mb-4 flex h-10 w-10 items-center justify-center border border-[#00b7cc]/25 text-[#00b7cc] transition-colors group-hover:bg-[#00b7cc] group-hover:text-white">
                       <CalendarDays className="h-4 w-4" />
                     </div>
                     <p className="font-serif text-xl text-foreground">
@@ -239,7 +239,7 @@ export default function TourScheduler() {
                     <p className="mt-2 text-sm leading-relaxed text-foreground/55">
                       {tour.description}
                     </p>
-                    <p className="mt-4 text-[10px] tracking-[0.2em] text-[#D32323] uppercase">
+                    <p className="mt-4 text-[10px] tracking-[0.2em] text-[#00b7cc] uppercase">
                       {tour.duration}
                     </p>
                   </button>
@@ -266,7 +266,7 @@ export default function TourScheduler() {
                       aria-label="Previous month"
                       disabled={!canGoPrev}
                       onClick={() => setViewMonth((m) => addMonths(m, -1))}
-                      className="flex h-8 w-8 items-center justify-center text-foreground/60 transition-colors hover:text-[#D32323] disabled:opacity-30"
+                      className="flex h-8 w-8 items-center justify-center text-foreground/60 transition-colors hover:text-[#00b7cc] disabled:opacity-30"
                     >
                       <ChevronLeft className="h-4 w-4" />
                     </button>
@@ -277,7 +277,7 @@ export default function TourScheduler() {
                       type="button"
                       aria-label="Next month"
                       onClick={() => setViewMonth((m) => addMonths(m, 1))}
-                      className="flex h-8 w-8 items-center justify-center text-foreground/60 transition-colors hover:text-[#D32323]"
+                      className="flex h-8 w-8 items-center justify-center text-foreground/60 transition-colors hover:text-[#00b7cc]"
                     >
                       <ChevronRight className="h-4 w-4" />
                     </button>
@@ -318,8 +318,8 @@ export default function TourScheduler() {
                               'cursor-not-allowed text-foreground/25',
                             bookable &&
                               !selected &&
-                              'text-foreground hover:bg-[#D32323]/10',
-                            selected && 'bg-[#D32323] text-white',
+                              'text-foreground hover:bg-[#00b7cc]/10',
+                            selected && 'bg-[#00b7cc] text-white',
                           )}
                         >
                           {date.getDate()}
@@ -347,8 +347,8 @@ export default function TourScheduler() {
                             className={cn(
                               'border px-4 py-2.5 text-sm transition-colors',
                               active
-                                ? 'border-[#D32323] bg-[#D32323] text-white'
-                                : 'border-border text-foreground hover:border-[#D32323]/50',
+                                ? 'border-[#00b7cc] bg-[#00b7cc] text-white'
+                                : 'border-border text-foreground hover:border-[#00b7cc]/50',
                             )}
                           >
                             {slot}
@@ -366,7 +366,7 @@ export default function TourScheduler() {
                     type="button"
                     disabled={!selectedDate || !selectedTime}
                     onClick={() => setStep('details')}
-                    className="mt-6 w-full bg-[#D32323] px-4 py-3 text-xs font-medium tracking-[0.2em] text-white uppercase transition-colors hover:bg-[#B01E1E] disabled:cursor-not-allowed disabled:opacity-40"
+                    className="mt-6 w-full bg-[#00b7cc] px-4 py-3 text-xs font-medium tracking-[0.2em] text-white uppercase transition-colors hover:bg-[#0099aa] disabled:cursor-not-allowed disabled:opacity-40"
                   >
                     Continue
                   </button>
@@ -442,7 +442,7 @@ export default function TourScheduler() {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="w-full bg-[#D32323] px-4 py-3.5 text-xs font-medium tracking-[0.2em] text-white uppercase transition-colors hover:bg-[#B01E1E] disabled:opacity-60"
+                  className="w-full bg-[#00b7cc] px-4 py-3.5 text-xs font-medium tracking-[0.2em] text-white uppercase transition-colors hover:bg-[#0099aa] disabled:opacity-60"
                 >
                   {submitting ? 'Scheduling…' : 'Schedule Tour'}
                 </button>
@@ -455,7 +455,7 @@ export default function TourScheduler() {
           selectedDate &&
           selectedTime ? (
             <div className="flex h-full min-h-105 flex-col items-center justify-center text-center">
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[#D32323]/10 text-[#D32323]">
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[#00b7cc]/10 text-[#00b7cc]">
                 <Check className="h-6 w-6" />
               </div>
               <h4 className="font-serif text-3xl text-foreground">
@@ -472,7 +472,7 @@ export default function TourScheduler() {
               <button
                 type="button"
                 onClick={resetBooking}
-                className="mt-8 border border-border px-6 py-3 text-xs tracking-[0.2em] text-foreground uppercase transition-colors hover:border-[#D32323]/50 hover:text-[#D32323]"
+                className="mt-8 border border-border px-6 py-3 text-xs tracking-[0.2em] text-foreground uppercase transition-colors hover:border-[#00b7cc]/50 hover:text-[#00b7cc]"
               >
                 Book Another Tour
               </button>

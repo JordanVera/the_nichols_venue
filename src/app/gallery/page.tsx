@@ -25,7 +25,7 @@ export default function GalleryPage() {
         />
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 pt-20">
-          <p className="text-[#D32323] text-[10px] tracking-[0.4em] uppercase mb-4">
+          <p className="text-[#00b7cc] text-[10px] tracking-[0.4em] uppercase mb-4">
             Our Space
           </p>
           <h1 className="font-serif text-white text-5xl sm:text-6xl">

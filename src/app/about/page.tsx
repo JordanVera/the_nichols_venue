@@ -28,7 +28,7 @@ export default function AboutPage() {
         />
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 pt-20">
-          <p className="text-[#D32323] text-[10px] tracking-[0.4em] uppercase mb-4">
+          <p className="text-[#00b7cc] text-[10px] tracking-[0.4em] uppercase mb-4">
             Our Story
           </p>
           <h1 className="font-serif text-white text-5xl sm:text-6xl">
@@ -41,7 +41,7 @@ export default function AboutPage() {
         <div className="flex flex-col gap-8">
           <h2 className="font-serif text-4xl sm:text-5xl leading-tight text-foreground">
             A luxury event space in{' '}
-            <em className="italic text-[#D32323]">Montrose, Houston.</em>
+            <em className="italic text-[#00b7cc]">Montrose, Houston.</em>
           </h2>
           <p className="text-foreground/65 text-lg leading-relaxed">
             {ABOUT_CONTENT.intro}
@@ -59,7 +59,7 @@ export default function AboutPage() {
               { number: '5★', label: `${COMPANY.reviewCount}+ Reviews` },
             ].map((stat) => (
               <div key={stat.label}>
-                <p className="font-serif text-2xl text-[#D32323]">
+                <p className="font-serif text-2xl text-[#00b7cc]">
                   {stat.number}
                 </p>
                 <p className="text-sm text-foreground/50 mt-1">{stat.label}</p>
@@ -89,7 +89,7 @@ export default function AboutPage() {
       <section className="py-16 px-6 text-center">
         <Link
           href="/contact"
-          className="inline-flex items-center gap-2 text-[#D32323] text-xs tracking-[0.2em] uppercase hover:gap-3 transition-all"
+          className="inline-flex items-center gap-2 text-[#00b7cc] text-xs tracking-[0.2em] uppercase hover:gap-3 transition-all"
         >
           Contact for Packages <ArrowRight size={12} />
         </Link>

@@ -40,7 +40,7 @@ export default function StickyMobileCta() {
           <Link
             href="/tour"
             tabIndex={visible ? 0 : -1}
-            className="shrink-0 bg-[#D32323] px-5 py-3 text-[10px] font-medium tracking-[0.2em] text-black uppercase transition-colors hover:bg-[#B01E1E]"
+            className="shrink-0 bg-[#00b7cc] px-5 py-3 text-[10px] font-medium tracking-[0.2em] text-black uppercase transition-colors hover:bg-[#0099aa]"
           >
             Book a Tour
           </Link>

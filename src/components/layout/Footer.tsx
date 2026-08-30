@@ -2,14 +2,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, MapPin, Mail } from 'lucide-react';
 import { NAV_LINKS, COMPANY } from '@/lib/data';
+import { EVENT_NAV } from '@/lib/events';
 import SocialLinks from '@/components/layout/SocialLinks';
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white/80">
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-24 sm:pb-8 lg:px-8">
-        <div className="mb-12 grid grid-cols-1 gap-12 md:grid-cols-3">
-          <div className="flex flex-col gap-4">
+        <div className="mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+          <div className="flex flex-col gap-4 lg:col-span-1">
             <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/logo-main.png"
@@ -32,7 +33,27 @@ export default function Footer() {
               Navigation
             </h4>
             <ul className="flex flex-col gap-3">
-              {NAV_LINKS.map((link) => (
+              {NAV_LINKS.filter((link) => link.href !== '/events').map(
+                (link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-sm transition-colors hover:text-white"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ),
+              )}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="mb-6 text-xs tracking-[0.25em] text-white uppercase">
+              Events
+            </h4>
+            <ul className="flex flex-col gap-3">
+              {EVENT_NAV.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

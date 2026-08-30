@@ -22,7 +22,7 @@ export default function CtaStrip() {
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-4 text-[10px] tracking-[0.4em] text-[#D32323] uppercase"
+          className="mb-4 text-[10px] tracking-[0.4em] text-[#00b7cc] uppercase"
         >
           Plan Your Celebration
         </motion.p>
@@ -54,14 +54,14 @@ export default function CtaStrip() {
         >
           <Link
             href="/tour"
-            className="bg-[#D32323] px-8 py-3.5 text-xs tracking-[0.2em] text-black uppercase transition-colors duration-200 hover:bg-[#B01E1E]"
+            className="bg-[#00b7cc] px-8 py-3.5 text-xs tracking-[0.2em] text-black uppercase transition-colors duration-200 hover:bg-[#0099aa]"
           >
             Book a Tour
           </Link>
           {COMPANY.phone ? (
             <a
               href={`tel:${COMPANY.phoneHref}`}
-              className="inline-flex items-center justify-center gap-2 border border-white/50 px-8 py-3.5 text-xs tracking-[0.2em] text-white uppercase transition-all duration-200 hover:border-[#D32323] hover:text-[#D32323]"
+              className="inline-flex items-center justify-center gap-2 border border-white/50 px-8 py-3.5 text-xs tracking-[0.2em] text-white uppercase transition-all duration-200 hover:border-[#00b7cc] hover:text-[#00b7cc]"
             >
               <Phone size={13} />
               Text {COMPANY.phone}
@@ -69,7 +69,7 @@ export default function CtaStrip() {
           ) : (
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center border border-white/50 px-8 py-3.5 text-xs tracking-[0.2em] text-white uppercase transition-all duration-200 hover:border-[#D32323] hover:text-[#D32323]"
+              className="inline-flex items-center justify-center border border-white/50 px-8 py-3.5 text-xs tracking-[0.2em] text-white uppercase transition-all duration-200 hover:border-[#00b7cc] hover:text-[#00b7cc]"
             >
               Send an Inquiry
             </Link>
