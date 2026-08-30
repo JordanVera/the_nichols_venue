@@ -1,0 +1,56 @@
+export type GalleryImage = {
+  id: number;
+  src: string;
+  alt: string;
+  category: string;
+  featured: boolean;
+};
+
+export const GALLERY_IMAGES: GalleryImage[] = [
+  { id: 1, src: '/gallery/gallery-01.jpg', alt: 'The Nichols Venue photo 1', category: 'events', featured: true },
+  { id: 2, src: '/gallery/gallery-02.jpg', alt: 'The Nichols Venue photo 2', category: 'exterior', featured: true },
+  { id: 3, src: '/gallery/gallery-03.jpg', alt: 'The Nichols Venue photo 3', category: 'interior', featured: true },
+  { id: 4, src: '/gallery/gallery-04.jpg', alt: 'The Nichols Venue photo 4', category: 'events', featured: true },
+  { id: 5, src: '/gallery/gallery-05.jpg', alt: 'The Nichols Venue photo 5', category: 'exterior', featured: true },
+  { id: 6, src: '/gallery/gallery-06.jpg', alt: 'The Nichols Venue photo 6', category: 'interior', featured: true },
+  { id: 7, src: '/gallery/gallery-07.jpg', alt: 'The Nichols Venue photo 7', category: 'events', featured: true },
+  { id: 8, src: '/gallery/gallery-08.jpg', alt: 'The Nichols Venue photo 8', category: 'exterior', featured: true },
+  { id: 9, src: '/gallery/gallery-09.jpg', alt: 'The Nichols Venue photo 9', category: 'interior', featured: false },
+  { id: 10, src: '/gallery/gallery-10.jpg', alt: 'The Nichols Venue photo 10', category: 'events', featured: false },
+  { id: 11, src: '/gallery/gallery-11.jpg', alt: 'The Nichols Venue photo 11', category: 'exterior', featured: false },
+  { id: 12, src: '/gallery/gallery-12.jpg', alt: 'The Nichols Venue photo 12', category: 'interior', featured: false },
+  { id: 13, src: '/gallery/gallery-13.jpg', alt: 'The Nichols Venue photo 13', category: 'events', featured: false },
+  { id: 14, src: '/gallery/gallery-14.jpg', alt: 'The Nichols Venue photo 14', category: 'exterior', featured: false },
+  { id: 15, src: '/gallery/gallery-15.jpg', alt: 'The Nichols Venue photo 15', category: 'interior', featured: false },
+  { id: 16, src: '/gallery/gallery-16.jpg', alt: 'The Nichols Venue photo 16', category: 'events', featured: false },
+  { id: 17, src: '/gallery/gallery-17.jpg', alt: 'The Nichols Venue photo 17', category: 'exterior', featured: false },
+  { id: 18, src: '/gallery/gallery-18.jpg', alt: 'The Nichols Venue photo 18', category: 'interior', featured: false },
+  { id: 19, src: '/gallery/gallery-19.jpg', alt: 'The Nichols Venue photo 19', category: 'events', featured: false },
+  { id: 20, src: '/gallery/gallery-20.jpg', alt: 'The Nichols Venue photo 20', category: 'exterior', featured: false },
+  { id: 21, src: '/gallery/gallery-21.jpg', alt: 'The Nichols Venue photo 21', category: 'interior', featured: false },
+  { id: 22, src: '/gallery/gallery-22.jpg', alt: 'The Nichols Venue photo 22', category: 'events', featured: false },
+  { id: 23, src: '/gallery/gallery-23.jpg', alt: 'The Nichols Venue photo 23', category: 'exterior', featured: false },
+  { id: 24, src: '/gallery/gallery-24.jpg', alt: 'The Nichols Venue photo 24', category: 'interior', featured: false },
+  { id: 25, src: '/gallery/gallery-25.jpg', alt: 'The Nichols Venue photo 25', category: 'events', featured: false },
+  { id: 26, src: '/gallery/gallery-26.jpg', alt: 'The Nichols Venue photo 26', category: 'exterior', featured: false },
+  { id: 27, src: '/gallery/gallery-27.jpg', alt: 'The Nichols Venue photo 27', category: 'interior', featured: false },
+  { id: 28, src: '/gallery/gallery-28.jpg', alt: 'The Nichols Venue photo 28', category: 'events', featured: false },
+  { id: 29, src: '/gallery/gallery-29.jpg', alt: 'The Nichols Venue photo 29', category: 'exterior', featured: false },
+  { id: 30, src: '/gallery/gallery-30.jpg', alt: 'The Nichols Venue photo 30', category: 'interior', featured: false },
+  { id: 31, src: '/gallery/gallery-31.jpg', alt: 'The Nichols Venue photo 31', category: 'events', featured: false },
+  { id: 32, src: '/gallery/gallery-32.jpg', alt: 'The Nichols Venue photo 32', category: 'exterior', featured: false },
+  { id: 33, src: '/gallery/gallery-33.jpg', alt: 'The Nichols Venue photo 33', category: 'interior', featured: false },
+  { id: 34, src: '/gallery/gallery-34.jpg', alt: 'The Nichols Venue photo 34', category: 'events', featured: false },
+  { id: 35, src: '/gallery/gallery-35.jpg', alt: 'The Nichols Venue photo 35', category: 'exterior', featured: false },
+  { id: 36, src: '/gallery/gallery-36.jpg', alt: 'The Nichols Venue photo 36', category: 'interior', featured: false },
+  { id: 37, src: '/gallery/gallery-37.jpg', alt: 'The Nichols Venue photo 37', category: 'events', featured: false },
+  { id: 38, src: '/gallery/gallery-38.jpg', alt: 'The Nichols Venue photo 38', category: 'exterior', featured: false },
+  { id: 39, src: '/gallery/gallery-39.jpg', alt: 'The Nichols Venue photo 39', category: 'interior', featured: false },
+  { id: 40, src: '/gallery/gallery-40.jpg', alt: 'The Nichols Venue photo 40', category: 'events', featured: false },
+  { id: 41, src: '/gallery/gallery-41.jpg', alt: 'The Nichols Venue photo 41', category: 'exterior', featured: false },
+  { id: 42, src: '/gallery/gallery-42.jpg', alt: 'The Nichols Venue photo 42', category: 'interior', featured: false },
+  { id: 43, src: '/gallery/gallery-43.jpg', alt: 'The Nichols Venue photo 43', category: 'events', featured: false },
+  { id: 44, src: '/gallery/gallery-44.jpg', alt: 'The Nichols Venue photo 44', category: 'exterior', featured: false },
+  { id: 45, src: '/gallery/gallery-45.jpg', alt: 'The Nichols Venue photo 45', category: 'interior', featured: false },
+  { id: 46, src: '/gallery/gallery-46.jpg', alt: 'The Nichols Venue photo 46', category: 'events', featured: false },
+];
