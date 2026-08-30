@@ -72,7 +72,7 @@ export const VENUE_HIGHLIGHTS = [
   {
     title: 'Montrose · River Oaks',
     description:
-      '2515 Morse Street — minutes from downtown, the Medical Center, and Houston\'s best hotels, restaurants, and nightlife.',
+      "2515 Morse Street — minutes from downtown, the Medical Center, and Houston's best hotels, restaurants, and nightlife.",
   },
 ];
 
@@ -93,42 +93,42 @@ export const REVIEWS = [
     name: 'Wedding Client',
     event: 'Wedding · Google Review',
     rating: 5,
-    text: "The Nichols exceeded every expectation. The projection walls created the most stunning atmosphere — our guests could not stop talking about how unique and beautiful the space was.",
+    text: 'The Nichols exceeded every expectation. The projection walls created the most stunning atmosphere — our guests could not stop talking about how unique and beautiful the space was.',
   },
   {
     id: 2,
     name: 'Corporate Client',
     event: 'Corporate Event · Google Review',
     rating: 5,
-    text: "Perfect venue for our product launch. The team was professional, the A/V capabilities are incredible, and the Montrose location was convenient for all our guests.",
+    text: 'Perfect venue for our product launch. The team was professional, the A/V capabilities are incredible, and the Montrose location was convenient for all our guests.',
   },
   {
     id: 3,
     name: 'Wedding Client',
     event: 'Wedding · Google Review',
     rating: 5,
-    text: "We fell in love with The Nichols the moment we walked in. The loft-style space, included furnishings, and flexible layout made planning so much easier — and the photos are breathtaking.",
+    text: 'We fell in love with The Nichols the moment we walked in. The loft-style space, included furnishings, and flexible layout made planning so much easier — and the photos are breathtaking.',
   },
   {
     id: 4,
     name: 'Google Reviewer',
     event: 'Gala · Google Review',
     rating: 5,
-    text: "Hosted our annual gala here for 350 seated guests and it was flawless. The projection walls and lighting transformed the room, and the staff handled every detail with care.",
+    text: 'Hosted our annual gala here for 350 seated guests and it was flawless. The projection walls and lighting transformed the room, and the staff handled every detail with care.',
   },
   {
     id: 5,
     name: 'Google Reviewer',
     event: 'Private Event · Google Review',
     rating: 5,
-    text: "A truly one-of-a-kind Houston venue. The combination of luxury finishes, cutting-edge visuals, and prime River Oaks location makes The Nichols stand out from every other event space in the city.",
+    text: 'A truly one-of-a-kind Houston venue. The combination of luxury finishes, cutting-edge visuals, and prime River Oaks location makes The Nichols stand out from every other event space in the city.',
   },
   {
     id: 6,
     name: 'Google Reviewer',
     event: 'Wedding · Google Review',
     rating: 5,
-    text: "From tour to teardown, the Nichols team was responsive and thoughtful. Our wedding felt completely custom — the venue adapts to your vision unlike anywhere else we toured in Houston.",
+    text: 'From tour to teardown, the Nichols team was responsive and thoughtful. Our wedding felt completely custom — the venue adapts to your vision unlike anywhere else we toured in Houston.',
   },
 ] as const;
 

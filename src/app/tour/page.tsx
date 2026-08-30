@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, ExternalLink } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import TourScheduler from '@/components/tour/TourScheduler';
 import { pageMetadata } from '@/lib/seo';
-import { COMPANY, VIDEOS, EMBEDS } from '@/lib/data';
+import { COMPANY } from '@/lib/data';
 
 export const metadata: Metadata = pageMetadata({
   title: 'Schedule a Tour',
@@ -13,9 +14,6 @@ export const metadata: Metadata = pageMetadata({
 });
 
 export default function TourPage() {
-  const vimeo = VIDEOS.find((v) => v.type === 'vimeo');
-  const tourLink = EMBEDS.find((e) => e.type === 'external');
-
   return (
     <>
       <section className="relative h-64 overflow-hidden sm:h-80">
@@ -32,56 +30,59 @@ export default function TourPage() {
           <p className="mb-4 text-[10px] tracking-[0.4em] text-[#D32323] uppercase">
             Explore the Venue
           </p>
-          <h1 className="font-serif text-5xl text-white sm:text-6xl">Tour The Nichols</h1>
+          <h1 className="font-serif text-5xl text-white sm:text-6xl">
+            Tour The Nichols
+          </h1>
         </div>
       </section>
 
       <section className="px-6 py-16 lg:px-8">
-        <div className="mx-auto max-w-5xl space-y-16">
-          <div className="text-center">
-            <p className="mx-auto max-w-xl text-foreground/60 leading-relaxed">
-              Walk through our 4,000 sq ft loft-style venue — 100 feet of floor-to-ceiling
-              projection walls, 16-foot gallery walls, and flexible two-level layout at
-              {COMPANY.address}, {COMPANY.city}.
+        <div className="mx-auto max-w-5xl space-y-12">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="leading-relaxed text-foreground/60">
+              Use the calendar below to book a time to tour our venue at your
+              convenience. Walk through our 4,000 sq ft loft-style space — 100
+              feet of floor-to-ceiling projection walls, 16-foot gallery walls,
+              and a flexible two-level layout at {COMPANY.address},{' '}
+              {COMPANY.city}.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-foreground/50">
+              Please book at least 24 hours in advance. If you need something
+              sooner, call us at{' '}
+              <a
+                href={`tel:${COMPANY.phoneHref}`}
+                className="text-[#D32323] transition-colors hover:underline"
+              >
+                {COMPANY.phone}
+              </a>
+              . If the venue becomes reserved on the day of your tour, someone
+              will reach out to reschedule.
             </p>
           </div>
 
-          {vimeo?.vimeoId ? (
-            <div className="space-y-4">
-              <h2 className="font-serif text-3xl text-center">Venue Video</h2>
-              <div className="relative aspect-video overflow-hidden rounded-sm border border-border">
-                <iframe
-                  src={`https://player.vimeo.com/video/${vimeo.vimeoId}?title=0&byline=0&portrait=0`}
-                  title={vimeo.title}
-                  className="absolute inset-0 h-full w-full border-0"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-          ) : null}
+          <TourScheduler />
 
-          <div className="text-center space-y-6">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-[#D32323] px-8 py-3.5 text-xs font-medium tracking-[0.2em] text-white uppercase hover:bg-[#B01E1E] transition-colors"
-            >
-              Schedule an In-Person Tour
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-            {tourLink ? (
-              <p className="text-sm text-foreground/50">
-                Or 
+          <div className="flex flex-col items-center justify-center gap-4 border-t border-border pt-10 text-center sm:flex-row sm:gap-8">
+            <p className="text-sm text-foreground/50">
+              Prefer to talk it through first?
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              {COMPANY.phone ? (
                 <a
-                  href={tourLink.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-[#D32323] hover:underline"
+                  href={`tel:${COMPANY.phoneHref}`}
+                  className="inline-flex items-center gap-2 border border-border px-5 py-2.5 text-xs tracking-[0.15em] text-foreground uppercase transition-colors hover:border-[#D32323]/50 hover:text-[#D32323]"
                 >
-                  book a tour on our current site
-                  <ExternalLink className="h-3 w-3" />
+                  <Phone className="h-3.5 w-3.5" />
+                  {COMPANY.phone}
                 </a>
-              </p>
-            ) : null}
+              ) : null}
+              <Link
+                href="/contact"
+                className="inline-flex items-center bg-[#D32323] px-5 py-2.5 text-xs tracking-[0.15em] text-white uppercase transition-colors hover:bg-[#B01E1E]"
+              >
+                Send an Inquiry
+              </Link>
+            </div>
           </div>
         </div>
       </section>

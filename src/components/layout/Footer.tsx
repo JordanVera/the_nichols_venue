@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/logo.png"
+                src="/logo-main.png"
                 alt={COMPANY.name}
                 width={160}
                 height={48}
@@ -20,9 +20,9 @@ export default function Footer() {
               />
             </Link>
             <p className="max-w-xs text-sm leading-relaxed">
-              A restored luxury venue in Montrose — weddings, receptions,
-              and private celebrations for up to {COMPANY.maxGuests} guests at
-              2515 Morse Street.
+              A restored luxury venue in Montrose — weddings, receptions, and
+              private celebrations for up to {COMPANY.maxGuests} guests at 2515
+              Morse Street.
             </p>
             <SocialLinks linkClassName="text-white/80 hover:text-white" />
           </div>
