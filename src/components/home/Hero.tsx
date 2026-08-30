@@ -15,9 +15,9 @@ import { COMPANY } from '@/lib/data';
 const SLIDE_DURATION_MS = 7000;
 
 const HERO_SLIDES = [
-  { src: '/gallery/gallery-01.jpg', alt: 'The Nichols Venue photo 1' },
-  { src: '/gallery/gallery-02.jpg', alt: 'The Nichols Venue photo 2' },
   { src: '/gallery/gallery-03.jpg', alt: 'The Nichols Venue photo 3' },
+  { src: '/gallery/gallery-02.jpg', alt: 'The Nichols Venue photo 2' },
+  { src: '/gallery/gallery-01.jpg', alt: 'The Nichols Venue photo 1' },
 ] as const;
 
 export default function Hero() {
@@ -90,7 +90,8 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.35 }}
           className="font-serif text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.05] tracking-tight max-w-4xl"
         >
-          Luxury Event Space for <em className="italic text-[#00b7cc]">Every Celebration</em>
+          Luxury Event Space for{' '}
+          <em className="italic text-[#00b7cc]">Every Celebration</em>
         </motion.h1>
 
         <motion.p
@@ -99,7 +100,8 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.55 }}
           className="mt-6 text-white/75 text-base sm:text-lg max-w-xl leading-relaxed"
         >
-          Houston's most unique loft-style venue — 100-ft projection walls, state-of-the-art lighting, and space for up to 400 guests.
+          Houston's most unique loft-style venue — 100-ft projection walls,
+          state-of-the-art lighting, and space for up to 400 guests.
         </motion.p>
 
         <motion.div
