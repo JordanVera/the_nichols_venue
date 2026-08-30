@@ -44,16 +44,19 @@ export default function EventMosaic({
           </h2>
         </div>
 
-        <div className="grid auto-rows-[140px] grid-cols-2 gap-2 sm:auto-rows-[180px] sm:gap-3 md:grid-cols-4 md:auto-rows-[200px] lg:auto-rows-[220px]">
+        <div className="grid auto-rows-[140px] grid-cols-2 gap-2 grid-flow-dense gap-0 sm:auto-rows-[180px] md:grid-cols-4 md:auto-rows-[200px] lg:auto-rows-[220px]">
           {items.map((item, index) => (
             <motion.figure
               key={`${item.src}-${index}`}
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
-              transition={{ duration: 0.45, delay: Math.min(index * 0.04, 0.28) }}
+              transition={{
+                duration: 0.45,
+                delay: Math.min(index * 0.04, 0.28),
+              }}
               className={cn(
-                'group relative overflow-hidden bg-muted',
+                'group relative m-0 overflow-hidden bg-muted',
                 SPAN_PATTERN[index % SPAN_PATTERN.length],
               )}
             >
